@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="921,4221" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="848,4221" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="60">
       <x:String>System.Activities</x:String>
@@ -314,7 +314,7 @@
                     <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_5" />
                     <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetFullText_1">
                       <ui:GetFullText.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="05854682-08d5-4977-986a-0c5f785dd028" InformativeScreenshot="b1f00b22f39880c1844a7eeb1e230ebb" Selector="&lt;webctrl aaname='Schreib oder stirb: Thriller' parentid='zg-ordered-list' tag='DIV' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="05854682-08d5-4977-986a-0c5f785dd028" InformativeScreenshot="b1f00b22f39880c1844a7eeb1e230ebb" Selector="&lt;webctrl parentid='zg-ordered-list' tag='DIV' idx='4' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -329,7 +329,7 @@
                     </ui:GetFullText>
                     <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetFullText_2">
                       <ui:GetFullText.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e4e11c42-0f6f-46ba-80ff-e8fb1ad45f72" InformativeScreenshot="2a03b68a8367d876ca8fb31fa5c2d6b7" Selector="&lt;webctrl aaname='Sebastian Fitzek' parentid='zg-ordered-list' tag='SPAN' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e4e11c42-0f6f-46ba-80ff-e8fb1ad45f72" InformativeScreenshot="2a03b68a8367d876ca8fb31fa5c2d6b7" Selector="&lt;webctrl parentid='zg-ordered-list' idx='18' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -344,7 +344,7 @@
                     </ui:GetFullText>
                     <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text 'SPAN'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetFullText_3">
                       <ui:GetFullText.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c2be9c51-6824-4686-b87e-62929ed5bf26" InformativeScreenshot="e9ca71a1cbe87cdad17fbc2bdf3552bf" Selector="&lt;webctrl aaname='18,00 €' parentid='zg-ordered-list' tag='SPAN' /&gt;">
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c2be9c51-6824-4686-b87e-62929ed5bf26" InformativeScreenshot="e9ca71a1cbe87cdad17fbc2bdf3552bf" Selector="&lt;webctrl parentid='zg-ordered-list' idx='22' /&gt;">
                           <ui:Target.TimeoutMS>
                             <InArgument x:TypeArguments="x:Int32" />
                           </ui:Target.TimeoutMS>
@@ -395,9 +395,7 @@
           <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" Body="PFA new books releases from Amazon" DisplayName="Send SMTP Mail Message" Email="srbislavkuzmanovic@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="634,145" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Password="srbPML100" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Extracted Data" To="[email]">
             <ui:SendMail.Files>
               <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                <InArgument x:TypeArguments="x:String">
-                  <Literal x:TypeArguments="x:String">C:\Users\admin\Documents\UiPath\Browser Automation/New Releases.xlsx</Literal>
-                </InArgument>
+                <InArgument x:TypeArguments="x:String">C:\Users\admin\Documents\UiPath\Browser Automation/New Releases.xlsx</InArgument>
               </scg:List>
             </ui:SendMail.Files>
           </ui:SendMail>
